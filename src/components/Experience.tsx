@@ -108,8 +108,8 @@ export function Experience() {
         </group>
       </group>
       
-      {/* Environment lighting */}
-      <Environment preset="night" />
+      {/* Environment lighting - using local HDR file instead of remote preset */}
+      <Environment files="/hdri/dikhololo_night_1k.hdr" />
     </>
   )
 } 
