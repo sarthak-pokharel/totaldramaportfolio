@@ -1,24 +1,17 @@
-# Cloudflare Pages configuration
 name = "3dportfolio"
 compatibility_date = "2023-12-01"
 compatibility_flags = ["nodejs_compat"]
 
-# Build settings
 [build]
-command = "CI=false npm run build"
+command = "npm run build"
 output_dir = "dist"
-base_dir = ""
 
-# Environment variables
 [env.production]
 NODE_VERSION = "20"
-CI = "false"
 
 [env.preview]
 NODE_VERSION = "20"
-CI = "false"
 
-# Build processing
 [build.processing]
 skip_processing = false
 
@@ -34,34 +27,38 @@ minify = true
 pretty_urls = true
 
 [build.processing.static_files]
-cache_max_age = "1y"
+cache_max_age = "31536000"
 
-# MIME types - Updated to ensure proper JavaScript module handling
-[build.processing.headers]
-for = ["/assets/*.js", "/*.js", "/**/*.js"]
-[build.processing.headers.values]
+[[headers]]
+for = "/*.js"
+[headers.values]
 Content-Type = "application/javascript"
+Cache-Control = "public, max-age=31536000, immutable"
 
-[[build.processing.headers]]
-for = ["/**/*.mjs"]
-[build.processing.headers.values]
+[[headers]]
+for = "/*.mjs"
+[headers.values]
 Content-Type = "application/javascript"
+Cache-Control = "public, max-age=31536000, immutable"
 
-[[build.processing.headers]]
-for = ["/**/*.ts", "/**/*.tsx", "/**/*.jsx"]
-[build.processing.headers.values]
+[[headers]]
+for = "/*.ts"
+[headers.values]
 Content-Type = "application/javascript"
+Cache-Control = "public, max-age=31536000, immutable"
 
-# Page Rules
-[[routes]]
-pattern = "/*"
-script = ""
+[[headers]]
+for = "/*.tsx"
+[headers.values]
+Content-Type = "application/javascript"
+Cache-Control = "public, max-age=31536000, immutable"
 
-# SPA fallback
-[[routes]]
-pattern = "/*"
-handler = "filesystem"
+[[headers]]
+for = "/*.jsx"
+[headers.values]
+Content-Type = "application/javascript"
+Cache-Control = "public, max-age=31536000, immutable"
 
-[[routes]]
-pattern = "/*"
-fallback_redirect = "/"
+[[rules]]
+type = "fallback"
+value = "/index.html"
