@@ -7,4 +7,22 @@
   Cache-Control: public, max-age=3600, s-maxage=86400
 
 /assets/*
-  Cache-Control: public, max-age=31536000, immutable 
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Content-Type: text/javascript
+
+/*.mjs
+  Content-Type: text/javascript
+
+/*.cjs
+  Content-Type: text/javascript
+
+/*.jsx
+  Content-Type: text/javascript
+
+/*.ts
+  Content-Type: text/javascript
+
+/*.tsx
+  Content-Type: text/javascript 
