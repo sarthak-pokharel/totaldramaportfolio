@@ -36,11 +36,21 @@ pretty_urls = true
 [build.processing.static_files]
 cache_max_age = "1y"
 
-# MIME types
+# MIME types - Updated to ensure proper JavaScript module handling
 [build.processing.headers]
-for = ["/assets/*.js", "/*.js", "/**/*.js", "/**/*.mjs", "/**/*.ts", "/**/*.tsx", "/**/*.jsx"]
+for = ["/assets/*.js", "/*.js", "/**/*.js"]
 [build.processing.headers.values]
-Content-Type = "text/javascript"
+Content-Type = "application/javascript"
+
+[[build.processing.headers]]
+for = ["/**/*.mjs"]
+[build.processing.headers.values]
+Content-Type = "application/javascript"
+
+[[build.processing.headers]]
+for = ["/**/*.ts", "/**/*.tsx", "/**/*.jsx"]
+[build.processing.headers.values]
+Content-Type = "application/javascript"
 
 # Page Rules
 [[routes]]
