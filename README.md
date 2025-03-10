@@ -32,7 +32,7 @@ An interactive portfolio website built with React, Three.js, and GSAP animations
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/sarthak-pokharel/3dportfolio.git
+git clone https://github.com/sarthak-pokharel/totaldramaportfolio.git
 cd 3dportfolio
 ```
 
