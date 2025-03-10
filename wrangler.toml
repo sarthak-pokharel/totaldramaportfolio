@@ -36,7 +36,22 @@ pretty_urls = true
 [build.processing.static_files]
 cache_max_age = "1y"
 
+# MIME types
+[build.processing.headers]
+for = ["/assets/*.js", "/*.js", "/**/*.js", "/**/*.mjs", "/**/*.ts", "/**/*.tsx", "/**/*.jsx"]
+[build.processing.headers.values]
+Content-Type = "text/javascript"
+
 # Page Rules
 [[routes]]
 pattern = "/*"
-script = "" 
+script = ""
+
+# SPA fallback
+[[routes]]
+pattern = "/*"
+handler = "filesystem"
+
+[[routes]]
+pattern = "/*"
+fallback_redirect = "/"
