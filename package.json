@@ -17,6 +17,7 @@
     "gsap": "^3.12.7",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "terser": "^5.39.0",
     "three": "^0.174.0"
   },
   "devDependencies": {
