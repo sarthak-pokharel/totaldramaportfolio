@@ -5,16 +5,18 @@ compatibility_flags = ["nodejs_compat"]
 
 # Build settings
 [build]
-command = "npm run build"
+command = "CI=false npm run build"
 output_dir = "dist"
 base_dir = ""
 
 # Environment variables
 [env.production]
 NODE_VERSION = "20"
+CI = "false"
 
 [env.preview]
 NODE_VERSION = "20"
+CI = "false"
 
 # Build processing
 [build.processing]
