@@ -1,0 +1,65 @@
+{
+  "profile_pic_link": "https://avatars.githubusercontent.com/u/54739445",
+  "name": "Sarthak",
+  "about": "Hello! I'm Sarthak, a Computer Engineering student at Pulchowk Campus, Nepal, driven by an insatiable curiosity for technology and mathematics.\n\nI thrive on complex problem-solving challenges and am fascinated by the intersection of mathematical principles and technological innovation. My passion lies in developing elegant solutions that bridge theoretical concepts with practical applications.\n\nMy vision is to harness the transformative power of technology and mathematical modeling to create impactful solutions, particularly focusing on addressing challenges in developing communities.\n\nExplore my portfolio to discover how I'm turning these aspirations into reality through various projects and technological explorations.",
+  "experience": "Currently focused on building a strong foundation through academic projects and self-directed learning initiatives.",
+  "copyright_tag": "Sp.",
+  "titles": [
+    "Mathematical Computing Specialist",
+    "Software Architecture Engineer",
+    "Data Science & ML Enthusiast",
+    "Full Stack Developer"
+  ],
+  "skills": [
+    "Advanced Python/JavaScript development with focus on scalable applications",
+    "Data analysis and visualization expertise using Excel and Power BI",
+    "Extensive experience with data science stack (NumPy, Pandas, Matplotlib, Scikit-learn)",
+    "Database design and optimization using SQL and NoSQL technologies",
+    "Machine learning implementation with focus on practical applications and deployment"
+  ],
+  "projects": [],
+  "contacts": [
+    {
+      "name": "email",
+      "value": "sarthak.whenever@gmail.com"
+    }
+  ],
+  "images": {
+    "primary": "./images/54739445.jpeg"
+  },
+  "address": "Kathmandu, Nepal",
+  "socials": [
+    {
+      "name": "email",
+      "link": "mailto:sarthak.whenever@gmail.com"
+    },
+    {
+      "name": "linkedin",
+      "link": "https://www.linkedin.com/in/sarthak-pokhrel/"
+    },
+    {
+      "name": "github",
+      "link": "https://github.com/sarthak-pokharel"
+    },
+    {
+      "name": "discord",
+      "link": "https://discordapp.com/users/691999880377401383"
+    }
+  ],
+  "blogs": [
+    {
+      "title": "The Intellectual Ventures of Sarthak Pokharel",
+      "short_description": "Join me on an intellectual journey through the realms of Computer Engineering. As a student at Pulchowk Campus, Nepal, I share insights, discoveries, and reflections that shape my academic and professional growth...",
+      "published_date": "21 Feb 2023",
+      "link": "https://sarthak-pokharel.github.io/Blogs/About-Me",
+      "labels": ["personal"]
+    },
+    {
+      "title": "Crafting Polar Coordinates from Chaos",
+      "short_description": "A deep dive into the mathematical intricacies of generating uniform random polar coordinates, presenting an elegant and efficient solution to this fascinating computational challenge",
+      "published_date": "21 Feb 2023",
+      "link": "https://sarthak-pokharel.github.io/Blogs/Uniform-Polar-Coordinates-Generation",
+      "labels": ["personal", "mathematics", "research"]
+    }
+  ]
+}

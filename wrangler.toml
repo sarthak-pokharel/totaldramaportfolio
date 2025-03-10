@@ -1,0 +1,40 @@
+# Cloudflare Pages configuration
+name = "3dportfolio"
+compatibility_date = "2023-12-01"
+compatibility_flags = ["nodejs_compat"]
+
+# Build settings
+[build]
+command = "npm run build"
+output_dir = "dist"
+base_dir = ""
+
+# Environment variables
+[env.production]
+NODE_VERSION = "20"
+
+[env.preview]
+NODE_VERSION = "20"
+
+# Build processing
+[build.processing]
+skip_processing = false
+
+[build.processing.css]
+bundle = true
+minify = true
+
+[build.processing.js]
+bundle = true
+minify = true
+
+[build.processing.html]
+pretty_urls = true
+
+[build.processing.static_files]
+cache_max_age = "1y"
+
+# Page Rules
+[[routes]]
+pattern = "/*"
+script = "" 
