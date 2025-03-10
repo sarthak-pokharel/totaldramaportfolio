@@ -1,0 +1,61 @@
+{
+  "headers": [
+    {
+      "source": "**/*.js",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "**/*.mjs",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "**/*.cjs",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "**/*.ts",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "**/*.tsx",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    },
+    {
+      "source": "**/*.jsx",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/javascript"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    { "source": "**", "destination": "/index.html" }
+  ]
+} 
