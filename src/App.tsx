@@ -1,7 +1,6 @@
 import { Canvas } from '@react-three/fiber'
 import { Suspense, useState, useEffect } from 'react'
 import { Experience } from './components/Experience'
-import { LoadingScreen } from './components/LoadingScreen'
 import { ScrollControls, Scroll, Preload, AdaptiveDpr, BakeShadows } from '@react-three/drei'
 import { EffectComposer, Bloom } from '@react-three/postprocessing'
 import { BlendFunction } from 'postprocessing'

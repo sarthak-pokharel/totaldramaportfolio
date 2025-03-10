@@ -1,7 +1,7 @@
 import { useRef } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { MeshDistortMaterial } from '@react-three/drei'
-import { Mesh, TorusKnotGeometry } from 'three'
+import { Mesh } from 'three'
 
 interface SpinningTorusProps {
   position?: [number, number, number]

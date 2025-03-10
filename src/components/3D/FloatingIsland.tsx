@@ -1,7 +1,6 @@
 import { useRef, useMemo } from 'react'
 import { useFrame } from '@react-three/fiber'
 import { Mesh, Vector3, TorusKnotGeometry } from 'three'
-import { useGLTF } from '@react-three/drei'
 
 export function FloatingIsland() {
   const islandRef = useRef<Mesh>(null)
